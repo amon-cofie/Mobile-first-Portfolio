@@ -116,22 +116,25 @@ body {
   height: 100vh;
   display: grid;
   grid-auto-rows: auto;
-  grid-gap: 100px;
+  grid-gap: 88px;
   justify-content: center;
-  /* justify-items: center;
-  align-items: center; */
 }
 
 .work1 {
-  margin-top: 114px;
+  margin-top: 96px;
 }
+
+.work4 {
+  margin-bottom: 96px;
+}
+
 .works {
   display: flex;
   flex-direction: column;
   margin-left: 24px;
   margin-right: 24px;
   border: 1px solid #dfe1e6;
-  background-color: white;
+  background-color: #ffffff;
   padding: 16px;
   border-radius: 16px;
 }
@@ -145,6 +148,7 @@ body {
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
+  color: #172b4d;
 }
 
 .client-frame {
@@ -163,4 +167,41 @@ body {
 
 .main-text {
   margin-top: 12px;
+}
+
+.lang-btns {
+  display: flex;
+}
+
+.lang-btns > li {
+  /* border: 1px solid black; */
+  margin-right: 8px;
+  margin-top: 12px;
+  padding: 4px 12px;
+  background-color: #ebebff;
+  border-radius: 8px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #6070ff;
+}
+
+.btn-container {
+  width: 100%;
+  margin-top: 12px;
+}
+
+.btn-container > button {
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  padding: 12px;
+  margin: 12px auto 12px 0;
+  background-color: #ffffff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: #396df2;
 }
