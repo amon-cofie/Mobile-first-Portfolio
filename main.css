@@ -203,3 +203,13 @@ body {
   line-height: 24px;
   color: #396df2;
 }
+
+.about {
+  padding: 114px 24px;
+  display: grid;
+  grid-auto-rows: auto;
+  /* grid-gap: 88px; */
+  justify-content: center;
+  background-color: #ffffff;
+  border-top-right-radius: 80px;
+}
