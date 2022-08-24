@@ -438,3 +438,66 @@ button:disabled {
   height: 48px;
   margin-bottom: 20px;
 }
+
+@media screen and (min-width: 481px) {
+  a {
+    text-decoration: none;
+  }
+
+  #navbar {
+    width: 80%;
+    padding: 0;
+  }
+
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 10px 12px;
+    height: auto;
+    width: auto;
+  }
+
+  .logo {
+    text-align: center;
+    vertical-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    color: #6070ff;
+  }
+
+  .navbar-menu-btn-container {
+    display: none;
+  }
+
+  .menu-list-items {
+    display: flex;
+    align-items: center;
+
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu-list-items ul {
+    display: flex;
+
+    align-items: center;
+  }
+
+  .menu-list-items li {
+    padding: 10px 12px;
+    margin-left: 8px;
+  }
+
+  .menu-list-items a {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    color: #344563;
+  }
+}
