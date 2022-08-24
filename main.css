@@ -63,6 +63,10 @@ body {
   align-items: center;
 }
 
+.menu-list-items {
+  display: none;
+}
+
 .main-introduction {
   width: 100vw;
   display: flex;
