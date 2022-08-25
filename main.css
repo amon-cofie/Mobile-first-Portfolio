@@ -440,7 +440,7 @@ button:disabled {
   margin-bottom: 20px;
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 768px) {
   a {
     text-decoration: none;
   }
@@ -544,7 +544,7 @@ button:disabled {
   }
 
   .works {
-    height: 60vh;
+    height: 70vh;
     margin: auto 10.1%;
   }
 
@@ -571,7 +571,7 @@ button:disabled {
   }
 
   .left-block {
-    margin: 30px 46px;
+    margin: 4% 2%;
   }
 
   .heading-area > h3 {
