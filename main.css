@@ -451,7 +451,6 @@ button:disabled {
 
   #navbar {
     width: 80%;
-
     padding: 0;
     margin-top: 10px;
   }
@@ -483,14 +482,12 @@ button:disabled {
   .menu-list-items {
     display: flex;
     align-items: center;
-
     margin: 0;
     padding: 0;
   }
 
   .menu-list-items ul {
     display: flex;
-
     align-items: center;
   }
 
@@ -509,9 +506,7 @@ button:disabled {
   }
 
   .main-introduction {
-    /* border: 2px black solid; */
     background-image: url(./images/Background-svgs/Header-bg.svg);
-    /* background-position: center; */
     background-position-x: right;
     background-position-y: bottom;
     background-origin: content-box;
@@ -575,7 +570,6 @@ button:disabled {
   }
 
   .left-block {
-    /* border: 1px solid black; */
     margin: 30px 46px;
   }
 
@@ -611,7 +605,6 @@ button:disabled {
   }
 
   .skill-list {
-    /* border: 1px solid black; */
     margin-top: 10.1%;
     padding: 0;
     margin-right: 10.1%;
@@ -649,19 +642,11 @@ button:disabled {
     margin-right: 25px;
   }
 
-  .contact-form {
-    /* border-top-left-radius: 80px; */
-  }
-
   .contact-me-background {
     position: relative;
     width: fit-content;
     height: auto;
     background-image: url(./images/Background-svgs/contact-form-background-shapes.svg);
-    /* top: 79.09px;
-    left: 75.34px;
-    bottom: 48.21px;
-    right: 74px; */
     display: flex;
     flex-direction: column;
     background-origin: content-box;
@@ -688,5 +673,11 @@ button:disabled {
   .contact-form-submit-button-container button {
     margin: 0;
     margin-top: 16px;
+  }
+
+  #name,
+  #email,
+  #msg {
+    border-radius: 0;
   }
 }
