@@ -513,6 +513,7 @@ button:disabled {
     background-size: contain;
     margin-top: -30px;
     z-index: -1;
+    width: 100%;
   }
 
   .main-introduction h1 {
@@ -581,6 +582,7 @@ button:disabled {
     display: flex;
     padding: 0;
     height: auto;
+    width: 100%;
   }
 
   .about-myself {
@@ -644,7 +646,6 @@ button:disabled {
 
   .contact-me-background {
     position: relative;
-    width: fit-content;
     height: auto;
     background-image: url(./images/Background-svgs/contact-form-background-shapes.svg);
     display: flex;
