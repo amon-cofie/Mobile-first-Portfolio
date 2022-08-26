@@ -63,6 +63,10 @@ body {
   align-items: center;
 }
 
+.menu-list-items {
+  display: none;
+}
+
 .main-introduction {
   width: 100vw;
   display: flex;
@@ -150,6 +154,7 @@ body {
   font-size: 32px;
   line-height: 44px;
   color: #172b4d;
+  width: 200px;
 }
 
 .client-frame {
@@ -228,7 +233,7 @@ button {
   flex-direction: column;
 }
 
-.about-myself > h1 {
+.about-myself > h2 {
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -433,4 +438,247 @@ button:disabled {
 #email {
   height: 48px;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  a {
+    text-decoration: none;
+  }
+
+  header {
+    height: fit-content;
+  }
+
+  #navbar {
+    width: 80%;
+    padding: 0;
+    margin-top: 10px;
+  }
+
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 10px 12px;
+    height: auto;
+    width: auto;
+  }
+
+  .logo {
+    text-align: center;
+    vertical-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    color: #6070ff;
+  }
+
+  .navbar-menu-btn-container {
+    display: none;
+  }
+
+  .menu-list-items {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu-list-items ul {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu-list-items li {
+    padding: 10px 12px;
+    margin-left: 8px;
+  }
+
+  .menu-list-items a {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    color: #344563;
+  }
+
+  .main-introduction {
+    background-image: url(./images/Background-svgs/Header-bg.svg);
+    background-position-x: right;
+    background-position-y: bottom;
+    background-origin: content-box;
+    background-size: contain;
+    margin-top: -30px;
+    z-index: -1;
+    width: 100%;
+  }
+
+  .main-introduction h1 {
+    padding-top: 14%;
+    margin: auto 16%;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    color: #091e42;
+  }
+
+  .main-introduction p {
+    margin: auto 16%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .social-connect {
+    margin: auto 16%;
+    margin-bottom: 16%;
+  }
+
+  .works-section {
+    gap: 142px;
+  }
+
+  .works {
+    height: 70vh;
+    margin: auto 10.1%;
+  }
+
+  .work2,
+  .work4 {
+    flex-direction: row-reverse;
+  }
+
+  .work1,
+  .work3 {
+    flex-direction: row;
+  }
+
+  .work1 {
+    margin-top: 142px;
+  }
+
+  .work4 {
+    margin-bottom: 142px;
+  }
+
+  .works-section img {
+    width: 49%;
+  }
+
+  .left-block {
+    margin: 4% 2%;
+  }
+
+  .heading-area > h3 {
+    width: max-content;
+  }
+
+  .about {
+    display: flex;
+    padding: 0;
+    height: auto;
+    width: 100%;
+  }
+
+  .about-myself {
+    width: 75%;
+    height: fit-content;
+    margin: 10.1%;
+    margin-right: 2%;
+    margin-bottom: 8%;
+  }
+
+  .about-myself > h2 {
+    margin-bottom: 14px;
+  }
+
+  .about-myself > p {
+    margin-bottom: 14px;
+  }
+
+  .social-media > ul {
+    margin-left: 5px;
+    margin-bottom: 25px;
+  }
+
+  .skill-list {
+    margin-top: 10.1%;
+    padding: 0;
+    margin-right: 10.1%;
+  }
+
+  .language-dropdown {
+    margin: auto 25px;
+  }
+
+  .language-list {
+    flex-direction: row;
+    padding-left: 0;
+  }
+
+  .language-list li {
+    width: 8vw;
+    height: 120px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 12px;
+    padding-left: 12px;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  .language-list p {
+    margin-bottom: 20px;
+    margin-left: 0;
+    padding: 0;
+  }
+
+  .frameworks,
+  .skills {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  .contact-me-background {
+    position: relative;
+    height: auto;
+    background-image: url(./images/Background-svgs/contact-form-background-shapes.svg);
+    display: flex;
+    flex-direction: column;
+    background-origin: content-box;
+    background-position: center;
+    background-size: contain;
+  }
+
+  .contact-me {
+    width: 45%;
+    align-self: center;
+  }
+
+  .contact-form form {
+    width: 37%;
+    align-self: center;
+  }
+
+  .contact-form-submit-button-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 127px;
+  }
+
+  .contact-form-submit-button-container button {
+    margin: 0;
+    margin-top: 16px;
+  }
+
+  #name,
+  #email,
+  #msg {
+    border-radius: 0;
+  }
 }
