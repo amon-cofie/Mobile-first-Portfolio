@@ -2,7 +2,7 @@
 
 # Mobile-first-Portfolio
 
-> This project contains the skeleton markup and styles for a portfolio website, with priority given to the mobile view first
+> This project contains the markup and styles for my portfolio website, with priority given to the mobile view first
 
 ## Built With
 
@@ -62,3 +62,7 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](https://github.com/amon-cofie/Mobile-first-Portfolio/blob/main/LICENSE) licensed.
+
+##Link to the github pages deployed website
+
+https://amon-cofie.github.io/Mobile-first-Portfolio/
