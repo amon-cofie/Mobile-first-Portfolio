@@ -63,6 +63,6 @@ Give a ⭐️ if you like this project!
 
 This project is [MIT](https://github.com/amon-cofie/Mobile-first-Portfolio/blob/main/LICENSE) licensed.
 
-##Link to the github pages deployed website
+## Link to the github pages deployed website
 
 https://amon-cofie.github.io/Mobile-first-Portfolio/
