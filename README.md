@@ -9,6 +9,10 @@
 - HTML
 - CSS
 
+## Live Demo
+
+[Link to the github pages deployed website](https://amon-cofie.github.io/Mobile-first-Portfolio/)
+
 ## Getting Started
 
 **how to clone the repository**
@@ -62,7 +66,3 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](https://github.com/amon-cofie/Mobile-first-Portfolio/blob/main/LICENSE) licensed.
-
-## Link to the github pages deployed website
-
-https://amon-cofie.github.io/Mobile-first-Portfolio/
