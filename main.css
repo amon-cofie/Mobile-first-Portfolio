@@ -343,20 +343,21 @@ button {
   margin-bottom: 57px;
 }
 
-button:hover {
+button:hover,
+button:focus {
   color: #fff;
-  background: #6070ff;
+  background: blue;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
 }
 
 button:active {
-  background: #2230d2;
+  background: blue;
   color: #fff;
 }
 
 button:disabled {
   border: 1px solid #c1c7d0;
-  color: #5e6c84;
+  color: black;
 }
 
 .contact-form {
@@ -443,6 +444,12 @@ label {
 #email {
   height: 48px;
   margin-bottom: 20px;
+}
+
+.contact-btn:hover {
+  background-color: blue;
+  color: #fff;
+  border: 2px solid #fff;
 }
 
 @media screen and (min-width: 768px) {
