@@ -436,6 +436,7 @@ button:disabled {
 
 label {
   color: #fff;
+  display: none;
 }
 
 #name,
