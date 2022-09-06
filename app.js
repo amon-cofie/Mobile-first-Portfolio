@@ -5,6 +5,8 @@ const ham = document.querySelector(".navbar-menu-btn-container");
 const mainBody = document.querySelector("#main-body");
 const logo = document.querySelector(".logo-container");
 const menuNavigation = div.querySelectorAll("li");
+const headerContainer = document.querySelector("#header-container");
+
 exit.src = "./images/Icon-cancel.png";
 exit.classList.add("exit");
 exit.style.marginTop = "-1.25rem";
@@ -74,21 +76,42 @@ for (let e of worksArray) {
 console.log(worksArray);
 console.log(workObjArr);
 
+const exit2 = document.createElement("img");
+exit2.src = "./images/Icon-pop-up-close.png";
+exit2.classList.add("exit-popup-window");
+
 function popUp(itr) {
+  console.log();
   let clkObj = workObjArr[itr];
   console.log(clkObj);
   let popUpWindowDiv = document.createElement("div");
   document.body.prepend(popUpWindowDiv);
   popUpWindowDiv.classList.add("pop-up-window-styles");
-  popUpWindowDiv.appendChild(exit);
-  exit.classList.add("exit-popup-window");
+
+  console.log(clkObj.btns);
+  let darkBgScrn = document.createElement("div");
+  document.body.prepend(darkBgScrn);
+  darkBgScrn.classList.add("dark-bg-screen");
+  // darkBgScrn.classList.add("blur-bg");
+  mainBody.classList.add("blur-bg");
+  // logo.classList.add("blur-bg");
+  headerContainer.classList.add("blur-bg");
+
   popUpWindowDiv.appendChild(clkObj.name);
+  clkObj.name.appendChild(exit2);
   popUpWindowDiv.appendChild(clkObj.details);
   popUpWindowDiv.appendChild(clkObj.image);
   popUpWindowDiv.appendChild(clkObj.description);
   popUpWindowDiv.appendChild(clkObj.tech);
   popUpWindowDiv.appendChild(clkObj.btns);
+  clkObj.description.innerHTML =
+    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.";
+  clkObj.details.style.marginBottom = "0.5rem";
+  clkObj.name.classList.add("pop-up-window-name-styles");
+  clkObj.btns.classList.add("bottom-border-add");
+  console.log(clkObj.image);
 }
+
 document
   .querySelector(".work1")
   .querySelector("button")
@@ -116,10 +139,3 @@ document
   .addEventListener("click", function () {
     popUp(3);
   });
-
-// worksArray.forEach((element) => {
-//   element.addEventListener("click", popUp());
-//   while (iterator < 4) {
-//     iterator++;
-//   }
-// });
