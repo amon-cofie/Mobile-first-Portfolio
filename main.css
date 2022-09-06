@@ -58,6 +58,26 @@ body {
   height: 24px;
 }
 
+.exit-popup-window {
+  float: right;
+}
+
+.pop-up-window-styles {
+  position: fixed;
+  top: 2rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  /* width: 100vw; */
+  /* height: 100vh; */
+  z-index: 101;
+  background-color: #fff;
+  border-radius: 1rem;
+  /* align-self: center; */
+}
+
 #header-container {
   display: flex;
   flex-direction: column;
