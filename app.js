@@ -131,3 +131,6 @@ function popUp(itr) {
   popUpBtn2.innerText = "See Source";
   popUpBtn2.appendChild(popUpBtn2Img);
 }
+
+document.querySelector(".work1").querySelector("button").addEventListener("click", function () { popUp(0); }); document.querySelector(".work2") .querySelector("button") .addEventListener("click", function () { popUp(1); }); 
+document .querySelector(".work3") .querySelector("button") .addEventListener("click", function () { popUp(2); }); document .querySelector(".work4") .querySelector("button") .addEventListener("click", function () { popUp(3); }); 
