@@ -88,7 +88,7 @@ body {
   margin-right: 1rem;
   /* margin: auto auto; */
   /* width: 100vw; */
-  max-height: 100vh;
+  /* max-height: 100vh; */
   z-index: 101;
   /* max-width: 80vw; */
   background-color: #fff;
@@ -116,10 +116,8 @@ body {
   justify-content: space-around;
   gap: 0.75 rem;
   align-items: center;
-  border-top: 0.125rem solid red;
-  border: 1px solid black;
-  padding-right: 0;
-  /* #ebecfo; */
+  border-top: 0.125rem solid #ebecf0;
+  padding-top: 0.75rem;
 }
 
 .pop-up-btn-styles {
@@ -127,10 +125,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* gap: 20%; */
+  gap: 0.8rem;
   border: 1px solid #6070ff;
   border-radius: 8px;
-  padding: 12px;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
 
   background-color: #fff;
   font-style: normal;
@@ -339,7 +338,7 @@ button {
   cursor: pointer;
 }
 
-.btn-container button {
+.btn-removable {
   border: 1px solid #6070ff;
   border-radius: 8px;
   padding: 12px;
@@ -833,5 +832,38 @@ label {
   #email,
   #msg {
     border-radius: 0;
+  }
+
+  .pop-up-window-styles {
+    top: 1rem;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  .resize-image-desktop {
+  }
+
+  .float-description-left {
+    position: relative;
+    float: left;
+    /* border: 1px solid black; */
+    width: 57%;
+    padding-right: 1rem;
+  }
+
+  .float-tech-right {
+    position: relative;
+    float: right;
+    /* border: 1px solid black; */
+    width: 43%;
+  }
+
+  .pop-up-window-buttons-container {
+    float: right;
+    /* border: 1px solid black; */
+    width: 43%;
+    padding-left: 0;
+    padding-right: 0;
+    gap: auto;
   }
 }

@@ -1,3 +1,4 @@
+const documentDefault = document.body.innerHTML;
 const union = document.querySelector(".navbar-menu-btn-container");
 const exit = document.createElement("img");
 const div = document.querySelector(".menu-list-items");
@@ -80,33 +81,33 @@ const exit2 = document.createElement("img");
 exit2.src = "./images/Icon-pop-up-close.png";
 exit2.classList.add("exit-popup-window");
 
-function popUp(itr) {
-  console.log();
-  let clkObj = workObjArr[itr];
-  let popUpWindowDiv = document.createElement("div");
-  document.body.prepend(popUpWindowDiv);
-  popUpWindowDiv.classList.add("pop-up-window-styles");
+let darkBgScrn = document.createElement("div");
+let popUpWindowDiv = document.createElement("div");
+let gridHolder = document.createElement("div");
 
-  console.log(clkObj.btns);
-  let darkBgScrn = document.createElement("div");
+function popUp(itr) {
+  let clkObj = workObjArr[itr];
+  document.body.appendChild(popUpWindowDiv);
+  popUpWindowDiv.classList.add("pop-up-window-styles");
   document.body.prepend(darkBgScrn);
   darkBgScrn.classList.add("dark-bg-screen");
-  // darkBgScrn.classList.add("blur-bg");
   mainBody.classList.add("blur-bg");
-  // logo.classList.add("blur-bg");
   headerContainer.classList.add("blur-bg");
-
   popUpWindowDiv.appendChild(clkObj.name);
   clkObj.name.appendChild(exit2);
   popUpWindowDiv.appendChild(clkObj.details);
   popUpWindowDiv.appendChild(clkObj.image);
-  popUpWindowDiv.appendChild(clkObj.description);
-  popUpWindowDiv.appendChild(clkObj.tech);
-  popUpWindowDiv.appendChild(clkObj.btns);
+  popUpWindowDiv.appendChild(gridHolder);
+  gridHolder.appendChild(clkObj.description);
+  gridHolder.appendChild(clkObj.tech);
+  gridHolder.appendChild(clkObj.btns);
   clkObj.description.innerHTML =
     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.";
   clkObj.details.style.marginBottom = "0.5rem";
   clkObj.name.classList.add("pop-up-window-name-styles");
+  clkObj.description.classList.add("float-description-left");
+  clkObj.tech.classList.add("float-tech-right");
+  clkObj.image.classList.add("resize-image-desktop");
   clkObj.btns.classList.add("pop-up-window-buttons-container");
   let popUpBtn1 = document.createElement("button");
   let popUpBtn2 = document.createElement("button");
@@ -116,21 +117,45 @@ function popUp(itr) {
   popUpBtn2Img.src = "./images/btn-2-png.png";
   popUpBtn1.classList.add("pop-up-btn-styles");
   popUpBtn2.classList.add("pop-up-btn-styles");
-
   let abc = clkObj.btns.querySelector(".btn-removable");
-
-  console.log(abc);
-
   clkObj.btns.removeChild(abc);
-
   clkObj.btns.appendChild(popUpBtn1);
   clkObj.btns.appendChild(popUpBtn2);
-
   popUpBtn1.innerText = "See live";
   popUpBtn1.appendChild(popUpBtn1Img);
   popUpBtn2.innerText = "See Source";
   popUpBtn2.appendChild(popUpBtn2Img);
 }
 
-document.querySelector(".work1").querySelector("button").addEventListener("click", function () { popUp(0); }); document.querySelector(".work2") .querySelector("button") .addEventListener("click", function () { popUp(1); }); 
-document .querySelector(".work3") .querySelector("button") .addEventListener("click", function () { popUp(2); }); document .querySelector(".work4") .querySelector("button") .addEventListener("click", function () { popUp(3); }); 
+document
+  .querySelector(".work1")
+  .querySelector("button")
+  .addEventListener("click", function () {
+    popUp(0);
+  });
+document
+  .querySelector(".work2")
+  .querySelector("button")
+  .addEventListener("click", function () {
+    popUp(1);
+  });
+document
+  .querySelector(".work3")
+  .querySelector("button")
+  .addEventListener("click", function () {
+    popUp(2);
+  });
+document
+  .querySelector(".work4")
+  .querySelector("button")
+  .addEventListener("click", function () {
+    popUp(3);
+  });
+
+function closePopUp() {
+  history.go(0);
+}
+
+exit2.addEventListener("click", () => {
+  closePopUp();
+});
