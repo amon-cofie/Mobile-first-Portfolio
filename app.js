@@ -83,7 +83,6 @@ exit2.classList.add("exit-popup-window");
 function popUp(itr) {
   console.log();
   let clkObj = workObjArr[itr];
-  console.log(clkObj);
   let popUpWindowDiv = document.createElement("div");
   document.body.prepend(popUpWindowDiv);
   popUpWindowDiv.classList.add("pop-up-window-styles");
@@ -108,34 +107,27 @@ function popUp(itr) {
     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.";
   clkObj.details.style.marginBottom = "0.5rem";
   clkObj.name.classList.add("pop-up-window-name-styles");
-  clkObj.btns.classList.add("bottom-border-add");
-  console.log(clkObj.image);
+  clkObj.btns.classList.add("pop-up-window-buttons-container");
+  let popUpBtn1 = document.createElement("button");
+  let popUpBtn2 = document.createElement("button");
+  let popUpBtn1Img = document.createElement("img");
+  popUpBtn1Img.src = "./images/btn-1-png.png";
+  let popUpBtn2Img = document.createElement("img");
+  popUpBtn2Img.src = "./images/btn-2-png.png";
+  popUpBtn1.classList.add("pop-up-btn-styles");
+  popUpBtn2.classList.add("pop-up-btn-styles");
+
+  let abc = clkObj.btns.querySelector(".btn-removable");
+
+  console.log(abc);
+
+  clkObj.btns.removeChild(abc);
+
+  clkObj.btns.appendChild(popUpBtn1);
+  clkObj.btns.appendChild(popUpBtn2);
+
+  popUpBtn1.innerText = "See live";
+  popUpBtn1.appendChild(popUpBtn1Img);
+  popUpBtn2.innerText = "See Source";
+  popUpBtn2.appendChild(popUpBtn2Img);
 }
-
-document
-  .querySelector(".work1")
-  .querySelector("button")
-  .addEventListener("click", function () {
-    popUp(0);
-  });
-
-document
-  .querySelector(".work2")
-  .querySelector("button")
-  .addEventListener("click", function () {
-    popUp(1);
-  });
-
-document
-  .querySelector(".work3")
-  .querySelector("button")
-  .addEventListener("click", function () {
-    popUp(2);
-  });
-
-document
-  .querySelector(".work4")
-  .querySelector("button")
-  .addEventListener("click", function () {
-    popUp(3);
-  });
