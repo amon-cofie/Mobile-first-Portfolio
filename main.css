@@ -571,6 +571,18 @@ label {
   border: 2px solid #fff;
 }
 
+.errorMessengerVisible {
+  position: absolute;
+  bottom: 2rem;
+  display: flex;
+  align-items: flex-start;
+  color: red;
+}
+
+.errorMessengerHidden {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   a {
     text-decoration: none;
@@ -858,5 +870,16 @@ label {
     width: 30%;
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .errorMessengerVisible {
+    left: 0;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 6.3rem;
+    font-size: 1.2rem;
+    font-weight: 600;
   }
 }
