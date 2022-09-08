@@ -58,6 +58,76 @@ body {
   height: 24px;
 }
 
+.exit-popup-window {
+  float: right;
+  width: 1rem;
+  height: 1rem;
+  align-self: center;
+}
+
+.dark-bg-screen {
+  display: flex;
+  background-color: #c1c7d0;
+  mix-blend-mode: multiply;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99;
+}
+
+.pop-up-window-styles {
+  position: fixed;
+  top: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  z-index: 101;
+  background-color: #fff;
+  border-radius: 1rem;
+}
+
+.pop-up-window-name-styles {
+  display: flex;
+  justify-content: space-between;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #172b4d;
+  padding-right: 0.875rem;
+}
+
+.pop-up-window-buttons-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 0.125rem solid #ebecf0;
+  padding-top: 0.75rem;
+}
+
+.pop-up-btn-styles {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  background-color: #fff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: #396df2;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
 #header-container {
   display: flex;
   flex-direction: column;
@@ -255,7 +325,7 @@ button {
   cursor: pointer;
 }
 
-.btn-container button {
+.btn-removable {
   border: 1px solid #6070ff;
   border-radius: 8px;
   padding: 12px;
@@ -749,5 +819,44 @@ label {
   #email,
   #msg {
     border-radius: 0;
+  }
+
+  .pop-up-window-styles {
+    position: fixed;
+    top: 2.2rem;
+    max-height: 92vh;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 5rem;
+    overflow-y: scroll;
+  }
+
+  .pop-up-window-styles::-webkit-scrollbar {
+    display: none;
+  }
+
+  .resize-image-desktop {
+    width: 100%;
+    align-self: center;
+  }
+
+  .float-description-left {
+    position: relative;
+    float: left;
+    width: 70%;
+    padding-right: 1rem;
+  }
+
+  .float-tech-right {
+    position: relative;
+    float: right;
+    width: 30%;
+  }
+
+  .pop-up-window-buttons-container {
+    float: right;
+    width: 30%;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
