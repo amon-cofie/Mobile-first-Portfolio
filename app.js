@@ -177,3 +177,27 @@ function closePopUp() {
 exit2.addEventListener('click', () => {
   closePopUp();
 });
+
+const thisForm = document.querySelector('#contact-form');
+const errorMessenger = document.createElement('small');
+const mainFormControls = document.querySelector('#mainFormControls');
+errorMessenger.innerText = 'Please enter email only in lowercase';
+mainFormControls.appendChild(errorMessenger);
+errorMessenger.className = 'errorMessengerHidden';
+
+function validateEmail() {
+  const userInputEmail = thisForm.querySelector('#email');
+  const validatorStr = userInputEmail.value.toLowerCase();
+  const validate = userInputEmail.value === validatorStr;
+  return validate;
+}
+
+thisForm.addEventListener('submit', (val) => {
+  if (validateEmail()) {
+    thisForm.submit();
+    errorMessenger.className = 'errorMessengerHidden';
+  } else {
+    val.preventDefault();
+    errorMessenger.className = 'errorMessengerVisible';
+  }
+});
