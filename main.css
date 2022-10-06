@@ -583,6 +583,10 @@ label {
   display: none;
 }
 
+.project-card-image {
+  width: 100%;
+}
+
 @media screen and (min-width: 768px) {
   a {
     text-decoration: none;
